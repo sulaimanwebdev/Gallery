@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import {photos} from './photos'
 import Gallery from "react-photo-gallery";
-import './portfolio.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
