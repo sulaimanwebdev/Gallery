@@ -30,3 +30,8 @@
   box-sizing: border-box;
   font-family: 'Avenir-Next', sans-serif;
 }
+
+
+.react-images__view-image{
+  margin:0 auto;
+}
