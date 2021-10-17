@@ -11,9 +11,22 @@
  }
 }
 
+
+
+
+
+@font-face {
+  font-family: "Avenir-Next";
+  src: url("./fonts/avenir-next-medium.ttf");
+  font-weight: normal;
+}  
+
+
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Avenir-Next', sans-serif;
 }

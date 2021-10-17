@@ -18,7 +18,7 @@ const [openBurger, setopenBurger] = useState("")
         <>
 
 
-        <div className={`${openBurger} panel transition	 transform -translate-x-full font-bold text-lg p-10  w-wPanelDeskTop bg-white  h-screen fixed top-0 left-0 z-10 flex flex-col gap-8`}>
+        <div className={`${openBurger} panel transition	 transform -translate-x-full font-bold text-lg p-10  w-wPanelDeskTop bg-white  h-screen fixed top-0 left-0 z-10 flex flex-col gap-8 sm3:w-wPanelMobile `}>
       <a href="#" className="mt-10">Home</a>
       <a href="#">Portfolio</a>
       <a href="#">Services</a>
@@ -35,7 +35,7 @@ const [openBurger, setopenBurger] = useState("")
 <div className="max-w-newCutom mx-auto px-7 md2:pb-7">
 
 
-<div className="flex items-center justify-between md2:gap-5">
+<div className="flex items-center justify-between md2:gap-5 py-5">
 
   <div className="items-center gap-4 hidden md2:flex md2:gap-2"><KeyboardBackspaceIcon /> <span className="font-bold text-lg sm2:text-base">Portfolio</span> </div>
 
@@ -48,15 +48,15 @@ const [openBurger, setopenBurger] = useState("")
       <a href="#">Contact</a>
     </nav>
      </div>
-     <div className="logo"><img src="/images/logo.png" alt=""  className="cursor-pointer w-44"/></div>
+     <div className="logo"><img src="/images/logo_big.svg" alt=""  className="cursor-pointer w-24"/></div>
 
 </div>
 
 
 
 <div className="portfoliotext">
-  <h1 className="font-medium text-lg mb-2">Job postings</h1>
-  <p className="max-w-paragraph opacity-80">Workcation is a property rental website. Entiam ullamcorper massa viverra consequat, consecteture id nulla tempus. Fringilla egestas justo massa purus sagittis malesuada.</p>
+  <h1 className="font-bold text-lg mb-2">Job postings</h1>
+  <p className="max-w-paragraph opacity-70 font-light">Workcation is a property rental website. Entiam ullamcorper massa viverra consequat, consecteture id nulla tempus. Fringilla egestas justo massa purus sagittis malesuada.</p>
   <hr className="my-5"/>
 </div>
 

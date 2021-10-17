@@ -5,7 +5,9 @@ module.exports = {
   theme: {
       extend: {
         spacing: {
-          'wPanelDeskTop': '400px'
+          'wPanelDeskTop': '400px',
+          'wPanelMobile': '70%'
+
         }
        },
   
@@ -28,6 +30,9 @@ module.exports = {
         'sm': {'max': '639px'},
 
         'sm2': {'max': '374px'},
+
+        'sm3': {'max': '473px'},
+
 
 
         
