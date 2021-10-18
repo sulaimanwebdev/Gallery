@@ -11,18 +11,11 @@
  }
 }
 
-
-
-
-
 @font-face {
   font-family: "Avenir-Next";
   src: url("./fonts/avenir-next-medium.ttf");
   font-weight: normal;
 }  
-
-
-
 
 *{
   margin: 0;
@@ -34,4 +27,14 @@
 
 .react-images__view-image{
   margin:0 auto;
+}
+
+
+.react-photo-gallery--gallery div{
+  align-items: flex-start;
+
+}
+
+.bottomHeader{
+  z-index: 5000;
 }

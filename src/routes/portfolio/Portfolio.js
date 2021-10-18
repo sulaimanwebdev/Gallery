@@ -8,6 +8,8 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 
 
 const Portfolio = () => {
+
+
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
@@ -75,12 +77,11 @@ const [openBurger, setopenBurger] = useState("")
 <div className="portfoliotext">
   <h1 className="font-bold text-lg mb-2">Job postings</h1>
   <p className="max-w-paragraph opacity-70 font-light">Workcation is a property rental website. Entiam ullamcorper massa viverra consequat, consecteture id nulla tempus. Fringilla egestas justo massa purus sagittis malesuada.</p>
-  <hr className="my-5"/>
+  <hr className="my-5" />
 </div>
 
 
-
-  <Gallery photos={photos} onClick={openLightbox}  />
+  <Gallery photos={photos} onClick={openLightbox} style={{display: 'none'}} />
 
   <ModalGateway>
         {viewerIsOpen ? (
