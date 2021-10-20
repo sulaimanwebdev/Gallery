@@ -13,7 +13,8 @@ import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 
 
-
+import SwiperCore, { Autoplay } from 'swiper';
+SwiperCore.use([Autoplay])
 const Home = () => {
 
 
@@ -81,9 +82,9 @@ const [openBurger, setopenBurger] = useState("")
 <div className="ssCont">
 
 
-<Swiper slidesPerView={'auto'} spaceBetween={30} pagination={{
+<Swiper  autoplay={{ delay: 4000 }} slidesPerView={'auto'} spaceBetween={30} pagination={{
   "clickable": true
-}} className="mySwiper">
+}}  className="mySwiper">
   
  <SwiperSlide>
    <h2 className="number">1</h2>
