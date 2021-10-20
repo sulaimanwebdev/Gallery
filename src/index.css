@@ -38,3 +38,48 @@
 .bottomHeader{
   z-index: 5000;
 }
+
+
+
+.ssCont{
+  max-width: 800px;
+  width: 100%;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+max-height: 400px !important;
+overflow: hidden;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide{
+  text-align: center;
+  font-size: 18px;
+  border-radius: 15px;
+
+  /* Center slide text vertically */
+ 
+  height: 300px !important;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.swiper-slide img {
+  display: block;
+
+  border-radius: 15px;
+}
+video{
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 60% !important;
+
+}
+
