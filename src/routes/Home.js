@@ -83,7 +83,8 @@ const [openBurger, setopenBurger] = useState("")
 <Swiper slidesPerView={'auto'} spaceBetween={30} pagination={{
   "clickable": true
 }} className="mySwiper">
- <SwiperSlide><video autoPlay loop src="https://vod-progressive.akamaized.net/exp=1634731246~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2434%2F15%2F387172534%2F1632444466.mp4~hmac=9a9e502d092e611cc80fbe9932e58e2e2e9b97df2972539383ecf972d589d3de/vimeo-prod-skyfire-std-us/01/2434/15/387172534/1632444466.mp4?filename=video.mp4"></video></SwiperSlide>
+  
+ <SwiperSlide><video autoPlay muted loop src="https://assets.mixkit.co/videos/preview/mixkit-very-close-shot-of-the-leaves-of-a-tree-wet-18310-large.mp4" /></SwiperSlide>
  <SwiperSlide><img src="https://images.pexels.com/photos/1164985/pexels-photo-1164985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" /></SwiperSlide>
  <SwiperSlide><img src="https://images.pexels.com/photos/1540977/pexels-photo-1540977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" /></SwiperSlide>
 <SwiperSlide><img src="https://images.pexels.com/photos/2311713/pexels-photo-2311713.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/></SwiperSlide>
