@@ -82,7 +82,7 @@ const [openBurger, setopenBurger] = useState("")
 <div className="ssCont">
 
 
-<Swiper  autoplay={{ delay: 4000 }} slidesPerView={'auto'} spaceBetween={30} pagination={{
+<Swiper autoplay={{ delay: 4000 }} slidesPerView={'auto'} spaceBetween={30} pagination={{
   "clickable": true
 }}  className="mySwiper">
   
