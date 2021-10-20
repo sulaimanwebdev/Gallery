@@ -1,5 +1,6 @@
 import React, {useState, useCallback} from 'react'
 import {photos} from './photos'
+import {Link} from 'react-router-dom'
 import Gallery from "react-photo-gallery";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -39,10 +40,10 @@ const [openBurger, setopenBurger] = useState("")
 
 
         <div className={`${openBurger} panel transition	 transform -translate-x-full font-bold text-lg p-10  w-wPanelDeskTop bg-white  h-screen fixed top-0 left-0 z-10 flex flex-col gap-8 sm3:w-wPanelMobile `}>
-      <a href="#" className="mt-10">Home</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
+        <Link to="/" clLinkssName="mt-10">Home</Link>
+      <Link to="/portfolio">Portfolio</Link>
+      <Link to="/">Services</Link>
+      <Link to="/">Contact</Link>
       <CloseIcon className="absolute top-11 cursor-pointer right-10" style={{fontSize: '36px'}} onClick={close}/>
         </div>
 
@@ -62,10 +63,10 @@ const [openBurger, setopenBurger] = useState("")
   <div className="flex items-center gap-7 visible md2:hidden">
     <div className="burger cursor-pointer"><MenuIcon style={{fontSize: '36px'}}/></div>
     <nav className="flex gap-5 font-bold text-lg">
-      <a href="#">Home</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
+    <Link to="/">Home</Link>
+      <Link to="/portfolio">Portfolio</Link>
+      <Link to="/">Services</Link>
+      <Link to="/">Contact</Link>
     </nav>
      </div>
      <div className="logo"><img src="/images/logo_big.svg" alt=""  className="cursor-pointer w-24"/></div>

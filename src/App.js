@@ -1,6 +1,6 @@
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import Portfolio from './routes/portfolio/Portfolio'
-import Home from './routes/Home'
+import Home from './routes/homePage/Home'
 
 function App() {
   return (

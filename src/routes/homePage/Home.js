@@ -1,4 +1,5 @@
 import React, {useState, useCallback, useRef} from 'react'
+import {Link} from 'react-router-dom'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
@@ -29,10 +30,10 @@ const [openBurger, setopenBurger] = useState("")
 
 
         <div className={`${openBurger} panel transition	 transform -translate-x-full font-bold text-lg p-10  w-wPanelDeskTop bg-white  h-screen fixed top-0 left-0 z-10 flex flex-col gap-8 sm3:w-wPanelMobile `}>
-      <a href="#" className="mt-10">Home</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
+      <Link to="/" clLinkssName="mt-10">Home</Link>
+      <Link to="/portfolio">Portfolio</Link>
+      <Link to="/">Services</Link>
+      <Link to="/">Contact</Link>
       <CloseIcon className="absolute top-11 cursor-pointer right-10" style={{fontSize: '36px'}} onClick={close}/>
         </div>
 
@@ -52,10 +53,10 @@ const [openBurger, setopenBurger] = useState("")
   <div className="flex items-center gap-7 visible md2:hidden">
     <div className="burger cursor-pointer"><MenuIcon style={{fontSize: '36px'}}/></div>
     <nav className="flex gap-5 font-bold text-lg">
-      <a href="#">Home</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
+      <Link to="/">Home</Link>
+      <Link to="/portfolio">Portfolio</Link>
+      <Link to="/">Services</Link>
+      <Link to="/">Contact</Link>
     </nav>
      </div>
      <div className="logo"><img src="/images/logo_big.svg" alt=""  className="cursor-pointer w-24"/></div>
@@ -103,6 +104,45 @@ const [openBurger, setopenBurger] = useState("")
 
 
 
+
+
+
+
+
+  <div class="bg-white">
+  <div class="max-w-2xl mx-auto py-24 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Protect your device</h2>
+      <p class="mt-4 text-gray-500">As a digital creative, your laptop or tablet is at the center of your work. Keep your device safe with a fabric sleeve that matches in quality and looks.</p>
+    </div>
+
+    <div class="mt-16 space-y-16">
+      <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8 lg:items-center">
+        <div class="mt-6 lg:mt-0 lg:row-start-1 lg:col-span-5 xl:col-span-4 lg:col-start-1">
+          <h3 class="text-lg font-medium text-gray-900">Minimal and thoughtful</h3>
+          <p class="mt-2 text-sm text-gray-500">Our laptop sleeve is compact and precisely fits 13&quot; devices. The zipper allows you to access the interior with ease, and the front pouch provides a convenient place for your charger cable.</p>
+        </div>
+        <div class="flex-auto lg:row-start-1 lg:col-span-7 xl:col-span-8 lg:col-start-6 xl:col-start-5">
+          <div class="aspect-w-5 aspect-h-2 rounded-lg bg-gray-100 overflow-hidden">
+            <img src="https://tailwindui.com/img/ecommerce-images/product-feature-07-detail-01.jpg" alt="White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull." class="object-center object-cover" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8 lg:items-center">
+        <div class="mt-6 lg:mt-0 lg:row-start-1 lg:col-span-5 xl:col-span-4 lg:col-start-8 xl:col-start-9">
+          <h3 class="text-lg font-medium text-gray-900">Refined details</h3>
+          <p class="mt-2 text-sm text-gray-500">We design every detail with the best materials and finishes. This laptop sleeve features durable canvas with double-stitched construction, a felt interior, and a high quality zipper that hold up to daily use.</p>
+        </div>
+        <div class="flex-auto lg:row-start-1 lg:col-span-7 xl:col-span-8 lg:col-start-1">
+          <div class="aspect-w-5 aspect-h-2 rounded-lg bg-gray-100 overflow-hidden">
+            <img src="https://tailwindui.com/img/ecommerce-images/product-feature-07-detail-02.jpg" alt="Detail of zipper pull with tan leather and silver rivet." class="object-center object-cover" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
