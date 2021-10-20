@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
-
+import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 
@@ -85,11 +85,95 @@ const [openBurger, setopenBurger] = useState("")
   "clickable": true
 }} className="mySwiper">
   
- <SwiperSlide><video autoPlay muted loop src="https://assets.mixkit.co/videos/preview/mixkit-very-close-shot-of-the-leaves-of-a-tree-wet-18310-large.mp4" /></SwiperSlide>
- <SwiperSlide><img src="https://images.pexels.com/photos/1164985/pexels-photo-1164985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" /></SwiperSlide>
- <SwiperSlide><img src="https://images.pexels.com/photos/1540977/pexels-photo-1540977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" /></SwiperSlide>
-<SwiperSlide><img src="https://images.pexels.com/photos/2311713/pexels-photo-2311713.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/></SwiperSlide>
-<SwiperSlide><img src="https://images.pexels.com/photos/1540977/pexels-photo-1540977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" /></SwiperSlide>
+ <SwiperSlide>
+   <h2 className="number">1</h2>
+   <div className="imgCont">
+     <div className="darkBackground"></div>
+   <img src="https://images.unsplash.com/photo-1456518563096-0ff5ee08204e?auto=format&amp;fit=crop&amp;w=1351&amp;q=60&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="" />
+   </div>
+   <div className="title">SLIDER ONE</div>
+   <div className="tag">Tagline <FiberManualRecordIcon style={{fontSize: '6px', opacity: '0.7' , marginBottom: '5px'}}/> <span>2017</span> </div>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae sit, eum iste aperiam nam voluptates nostrum accusantium, nemo harum ad mollitia. Minima nobis assumend.</p>
+    <a href="#">Discover</a>
+ </SwiperSlide>
+
+
+
+ <SwiperSlide>
+   <h2 className="number">2</h2>
+   <div className="imgCont">
+     <div className="darkBackground"></div>
+   <img src="https://images.unsplash.com/photo-1510709657750-f5a80fc8da9c?auto=format&amp;fit=crop&amp;w=1950&amp;q=60&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="" />
+   </div>
+   <div className="title">SLIDER TWO</div>
+   <div className="tag">Tagline <FiberManualRecordIcon style={{fontSize: '6px', opacity: '0.7' , marginBottom: '5px'}}/> <span>2017</span></div>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae sit, eum iste aperiam nam voluptates nostrum accusantium, nemo harum ad mollitia. Minima nobis assumend.</p>
+    <a href="#">Discover</a>
+ </SwiperSlide>
+
+
+
+ <SwiperSlide>
+   <h2 className="number">3</h2>
+   <div className="imgCont">
+     <div className="darkBackground"></div>
+   <img src="https://images.unsplash.com/photo-1505567745926-ba89000d255a?auto=format&amp;fit=crop&amp;w=1951&amp;q=60&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="" />
+   </div>
+   <div className="title">SLIDER THREE</div>
+   <div className="tag">Tagline <FiberManualRecordIcon style={{fontSize: '6px', opacity: '0.7' , marginBottom: '5px'}}/> <span>2017</span></div>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae sit, eum iste aperiam nam voluptates nostrum accusantium, nemo harum ad mollitia. Minima nobis assumend.</p>
+    <a href="#">Discover</a>
+ </SwiperSlide>
+
+
+
+
+
+
+
+ <SwiperSlide>
+   <h2 className="number">1</h2>
+   <div className="imgCont">
+     <div className="darkBackground"></div>
+   <img src="https://images.unsplash.com/photo-1456518563096-0ff5ee08204e?auto=format&amp;fit=crop&amp;w=1351&amp;q=60&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="" />
+   </div>
+   <div className="title">SLIDER ONE</div>
+   <div className="tag">Tagline <FiberManualRecordIcon style={{fontSize: '6px', opacity: '0.7' , marginBottom: '5px'}}/> <span>2017</span> </div>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae sit, eum iste aperiam nam voluptates nostrum accusantium, nemo harum ad mollitia. Minima nobis assumend.</p>
+    <a href="#">Discover</a>
+ </SwiperSlide>
+
+
+
+ <SwiperSlide>
+   <h2 className="number">2</h2>
+   <div className="imgCont">
+     <div className="darkBackground"></div>
+   <img src="https://images.unsplash.com/photo-1510709657750-f5a80fc8da9c?auto=format&amp;fit=crop&amp;w=1950&amp;q=60&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="" />
+   </div>
+   <div className="title">SLIDER TWO</div>
+   <div className="tag">Tagline <FiberManualRecordIcon style={{fontSize: '6px', opacity: '0.7' , marginBottom: '5px'}}/> <span>2017</span></div>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae sit, eum iste aperiam nam voluptates nostrum accusantium, nemo harum ad mollitia. Minima nobis assumend.</p>
+    <a href="#">Discover</a>
+ </SwiperSlide>
+
+
+
+ <SwiperSlide>
+   <h2 className="number">3</h2>
+   <div className="imgCont">
+     <div className="darkBackground"></div>
+   <img src="https://images.unsplash.com/photo-1505567745926-ba89000d255a?auto=format&amp;fit=crop&amp;w=1951&amp;q=60&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="" />
+   </div>
+   <div className="title">SLIDER THREE</div>
+   <div className="tag">Tagline <FiberManualRecordIcon style={{fontSize: '6px', opacity: '0.7' , marginBottom: '5px'}}/> <span>2017</span></div>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae sit, eum iste aperiam nam voluptates nostrum accusantium, nemo harum ad mollitia. Minima nobis assumend.</p>
+    <a href="#">Discover</a>
+ </SwiperSlide>
+
+
+
+
 
 
   </Swiper>
