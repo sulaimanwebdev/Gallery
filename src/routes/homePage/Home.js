@@ -92,10 +92,13 @@ const [openBurger, setopenBurger] = useState("")
      <div className="darkBackground"></div>
    <img src="https://images.unsplash.com/photo-1456518563096-0ff5ee08204e?auto=format&amp;fit=crop&amp;w=1351&amp;q=60&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="" />
    </div>
-   <div className="title">SLIDER ONE</div>
+  <div className="ggggg">
+    <div className="ggrey"></div>
+  <div className="title">SLIDER ONE</div>
    <div className="tag">Tagline <FiberManualRecordIcon style={{fontSize: '6px', opacity: '0.7' , marginBottom: '5px'}}/> <span>2017</span> </div>
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae sit, eum iste aperiam nam voluptates nostrum accusantium, nemo harum ad mollitia. Minima nobis assumend.</p>
     <a href="#">Discover</a>
+  </div>
  </SwiperSlide>
 
 
@@ -106,10 +109,13 @@ const [openBurger, setopenBurger] = useState("")
      <div className="darkBackground"></div>
    <img src="https://images.unsplash.com/photo-1510709657750-f5a80fc8da9c?auto=format&amp;fit=crop&amp;w=1950&amp;q=60&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="" />
    </div>
-   <div className="title">SLIDER TWO</div>
+  <div className="ggggg">
+    <div className="ggrey"></div>
+  <div className="title">SLIDER TWO</div>
    <div className="tag">Tagline <FiberManualRecordIcon style={{fontSize: '6px', opacity: '0.7' , marginBottom: '5px'}}/> <span>2017</span></div>
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae sit, eum iste aperiam nam voluptates nostrum accusantium, nemo harum ad mollitia. Minima nobis assumend.</p>
     <a href="#">Discover</a>
+  </div>
  </SwiperSlide>
 
 
@@ -120,12 +126,14 @@ const [openBurger, setopenBurger] = useState("")
      <div className="darkBackground"></div>
    <img src="https://images.unsplash.com/photo-1505567745926-ba89000d255a?auto=format&amp;fit=crop&amp;w=1951&amp;q=60&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="" />
    </div>
-   <div className="title">SLIDER THREE</div>
+  <div className="ggggg">
+    <div className="ggrey"></div>
+  <div className="title">SLIDER THREE</div>
    <div className="tag">Tagline <FiberManualRecordIcon style={{fontSize: '6px', opacity: '0.7' , marginBottom: '5px'}}/> <span>2017</span></div>
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae sit, eum iste aperiam nam voluptates nostrum accusantium, nemo harum ad mollitia. Minima nobis assumend.</p>
     <a href="#">Discover</a>
+  </div>
  </SwiperSlide>
-
 
 
 
@@ -138,10 +146,13 @@ const [openBurger, setopenBurger] = useState("")
      <div className="darkBackground"></div>
    <img src="https://images.unsplash.com/photo-1456518563096-0ff5ee08204e?auto=format&amp;fit=crop&amp;w=1351&amp;q=60&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="" />
    </div>
-   <div className="title">SLIDER ONE</div>
+  <div className="ggggg">
+    <div className="ggrey"></div>
+  <div className="title">SLIDER ONE</div>
    <div className="tag">Tagline <FiberManualRecordIcon style={{fontSize: '6px', opacity: '0.7' , marginBottom: '5px'}}/> <span>2017</span> </div>
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae sit, eum iste aperiam nam voluptates nostrum accusantium, nemo harum ad mollitia. Minima nobis assumend.</p>
     <a href="#">Discover</a>
+  </div>
  </SwiperSlide>
 
 
@@ -152,10 +163,13 @@ const [openBurger, setopenBurger] = useState("")
      <div className="darkBackground"></div>
    <img src="https://images.unsplash.com/photo-1510709657750-f5a80fc8da9c?auto=format&amp;fit=crop&amp;w=1950&amp;q=60&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="" />
    </div>
-   <div className="title">SLIDER TWO</div>
+  <div className="ggggg">
+    <div className="ggrey"></div>
+  <div className="title">SLIDER TWO</div>
    <div className="tag">Tagline <FiberManualRecordIcon style={{fontSize: '6px', opacity: '0.7' , marginBottom: '5px'}}/> <span>2017</span></div>
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae sit, eum iste aperiam nam voluptates nostrum accusantium, nemo harum ad mollitia. Minima nobis assumend.</p>
     <a href="#">Discover</a>
+  </div>
  </SwiperSlide>
 
 
@@ -166,11 +180,15 @@ const [openBurger, setopenBurger] = useState("")
      <div className="darkBackground"></div>
    <img src="https://images.unsplash.com/photo-1505567745926-ba89000d255a?auto=format&amp;fit=crop&amp;w=1951&amp;q=60&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="" />
    </div>
-   <div className="title">SLIDER THREE</div>
+  <div className="ggggg">
+    <div className="ggrey"></div>
+  <div className="title">SLIDER THREE</div>
    <div className="tag">Tagline <FiberManualRecordIcon style={{fontSize: '6px', opacity: '0.7' , marginBottom: '5px'}}/> <span>2017</span></div>
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae sit, eum iste aperiam nam voluptates nostrum accusantium, nemo harum ad mollitia. Minima nobis assumend.</p>
     <a href="#">Discover</a>
+  </div>
  </SwiperSlide>
+
 
 
 
