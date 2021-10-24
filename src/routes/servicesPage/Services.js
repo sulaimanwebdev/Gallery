@@ -1,46 +1,54 @@
-import React, {useState, useCallback} from 'react'
-import {photos} from './photos'
+import React, {useState, useCallback, useRef} from 'react'
 import {Link} from 'react-router-dom'
-import Gallery from "react-photo-gallery";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
-import Carousel, { Modal, ModalGateway } from "react-images";
+import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
+const features = [
+    {
+        name: 'Three card types',
+        description: 'Today, Next, and Someday cards allow you to defer your dreams into the future.',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-08-detail-01.jpg',
+        imageAlt: 'Green cardstock box containing white, beige, and brown cards.',
+    },
+    {
+        name: 'The perfect mix',
+        description: 'Each refill pack contains plenty of cards to last you a month of procrastination.',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-08-detail-02.jpg',
+        imageAlt: 'Green cardstock box open with 50 cards inside.',
+    },
+    {
+        name: 'Dot grid backs',
+        description: 'Flip a card over to doodle during meetings when you should be listening.',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-08-detail-03.jpg',
+        imageAlt: 'Detail of white today card, beige next card, and brown someday card with dot grid.',
+    },
+    {
+        name: 'Refill packs',
+        description: 'Subscribe and save on routine refill packs to keep you productive all year long.',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-08-detail-04.jpg',
+        imageAlt: 'Stack of three green cardstock boxes with 3 hole cutouts showing cards inside.',
+    },
+]
 
-const Portfolio = () => {
-
-
-  const [currentImage, setCurrentImage] = useState(0);
-  const [viewerIsOpen, setViewerIsOpen] = useState(false);
-
-
-
-
-  const openLightbox = useCallback((event, { photo, index }) => {
-    setCurrentImage(index);
-    setViewerIsOpen(true);
-  }, []);
-
-  const closeLightbox = () => {
-    setCurrentImage(0);
-    setViewerIsOpen(false);
-  };
+export default function Services() {
 
 const [openBurger, setopenBurger] = useState("")
-  let burgerMenu = () =>{
-    setopenBurger('show-panel')
-  }
+let burgerMenu = () =>{
+  setopenBurger('show-panel')
+}
 
-  let close = () => {
-    setopenBurger("")
-  }
+let close = () => {
+  setopenBurger("")
+}
+
     return (
         <>
 
 
-        <div className={`${openBurger} panel transition	 transform -translate-x-full font-bold text-lg p-10  w-wPanelDeskTop bg-white  h-screen fixed top-0 left-0 z-10 flex flex-col gap-8 sm3:w-wPanelMobile `}>
-        <Link to="/" clLinkssName="mt-10">Home</Link>
+<div className={`${openBurger} panel transition	 transform -translate-x-full font-bold text-lg p-10  w-wPanelDeskTop bg-white  h-screen fixed top-0 left-0 z-10 flex flex-col gap-8 sm3:w-wPanelMobile `}>
+      <Link to="/" clLinkssName="mt-10">Home</Link>
       <Link to="/portfolio">Portfolio</Link>
       <Link to="/services">Services</Link>
       <Link to="/contact">Contact</Link>
@@ -56,48 +64,61 @@ const [openBurger, setopenBurger] = useState("")
 <div className="max-w-newCutom mx-auto px-7 md2:pb-7">
 
 
-<div className="flex items-center justify-between md2:gap-5 py-5">
 
-  <div className="items-center gap-4 hidden md2:flex md2:gap-2"><KeyboardBackspaceIcon /> <span className="font-bold text-lg sm2:text-base">Portfolio</span> </div>
+<div className="flex items-center justify-between md2:gap-5 pb-5">
 
-  <div className="flex items-center gap-7 visible md2:hidden">
-    <div className="burger cursor-pointer"><MenuIcon style={{fontSize: '36px'}}/></div>
-    <nav className="flex gap-5 font-bold text-lg">
+<div className="items-center gap-4 hidden md2:flex md2:gap-2"><KeyboardBackspaceIcon /> <span className="font-bold text-lg sm2:text-base">Portfolio</span> </div>
+
+<div className="flex items-center gap-7 visible md2:hidden">
+  <div className="burger cursor-pointer"><MenuIcon style={{fontSize: '36px'}}/></div>
+  <nav className="flex gap-5 font-bold text-lg">
     <Link to="/">Home</Link>
-      <Link to="/portfolio">Portfolio</Link>
-      <Link to="/services">Services</Link>
-      <Link to="/contact">Contact</Link>
-    </nav>
-     </div>
-     <div className="logo"><img src="/images/logo_big.svg" alt=""  className="cursor-pointer w-24"/></div>
+    <Link to="/portfolio">Portfolio</Link>
+    <Link to="/services">Services</Link>
+    <Link to="/contact">Contact</Link>
+  </nav>
+   </div>
+   <div className="logo"><img src="/images/logo_big.svg" alt=""  className="cursor-pointer w-24"/></div>
 
 </div>
 
 
 
-<div className="portfoliotext">
-  <h1 className="font-bold text-lg mb-2">Job postings</h1>
-  <p className="max-w-paragraph opacity-70 font-light">Workcation is a property rental website. Entiam ullamcorper massa viverra consequat, consecteture id nulla tempus. Fringilla egestas justo massa purus sagittis malesuada.</p>
-  <hr className="my-5" />
-</div>
 
 
-  <Gallery photos={photos} onClick={openLightbox} style={{display: 'none'}} />
 
-  <ModalGateway>
-        {viewerIsOpen ? (
-          <Modal onClose={closeLightbox}>
-            <Carousel
-              currentIndex={currentImage}
-              views={photos.map(x => ({
-                ...x,
-                srcset: x.srcSet,
-                caption: x.title
-              }))}
-            />
-          </Modal>
-        ) : null}
-      </ModalGateway>
+
+
+
+        <div className="bg-white">
+            <div className="max-w-2xl mx-auto py-24 px-4 smmmm:py-32 smmmm:px-6 lg:max-w-7xl lg:px-8">
+                <div className="max-w-3xl">
+                    <h2 id="features-heading" className="font-medium text-gray-500">
+                        Focus
+                    </h2>
+                    <p className="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 smmmm:text-4xl">Simple productivity</p>
+                    <p className="mt-4 text-gray-500">
+                        Focus allows you to plan 10 daily tasks, while also thinking ahead about what's next. Forget distracting
+                        digital apps and embrace these small, sturdy pieces of paper.
+                    </p>
+                </div>
+
+                <div className="mt-11 grid items-start sm:grid-cols-1 gap-y-16 gap-x-6 sm:mt-16 smmmm:grid-cols-2 asd:grid-cols-4 lg:gap-x-8">
+                    {features.map((feature) => (
+                        <div key={feature.name} className="flex flex-col-reverse">
+                            <div className="mt-6">
+                                <h3 className="text-sm font-medium text-gray-900">{feature.name}</h3>
+                                <p className="mt-2 text-sm text-gray-500">{feature.description}</p>
+                            </div>
+                            <div className="aspect-w-1 aspect-h-1 rounded-lg bg-gray-100 overflow-hidden">
+                                <img src={feature.imageSrc} alt={feature.imageAlt} className="object-center object-cover" />
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+
 
 
 
@@ -182,12 +203,10 @@ const [openBurger, setopenBurger] = useState("")
       &copy; 2020 Workflow, Inc. All rights reserved.
     </p>
   </div>
-</footer>
+</footer> 
+
 
 </div>
-            
         </>
     )
 }
-
-export default Portfolio

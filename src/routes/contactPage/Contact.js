@@ -1,46 +1,25 @@
-import React, {useState, useCallback} from 'react'
-import {photos} from './photos'
+import React, {useState, useCallback, useRef} from 'react'
 import {Link} from 'react-router-dom'
-import Gallery from "react-photo-gallery";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
-import Carousel, { Modal, ModalGateway } from "react-images";
+import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 
-const Portfolio = () => {
-
-
-  const [currentImage, setCurrentImage] = useState(0);
-  const [viewerIsOpen, setViewerIsOpen] = useState(false);
-
-
-
-
-  const openLightbox = useCallback((event, { photo, index }) => {
-    setCurrentImage(index);
-    setViewerIsOpen(true);
-  }, []);
-
-  const closeLightbox = () => {
-    setCurrentImage(0);
-    setViewerIsOpen(false);
-  };
+const Contact = () => {
 
 const [openBurger, setopenBurger] = useState("")
-  let burgerMenu = () =>{
-    setopenBurger('show-panel')
-  }
+let burgerMenu = () =>{
+  setopenBurger('show-panel')
+}
 
-  let close = () => {
-    setopenBurger("")
-  }
+let close = () => {
+  setopenBurger("")
+}
     return (
         <>
-
-
-        <div className={`${openBurger} panel transition	 transform -translate-x-full font-bold text-lg p-10  w-wPanelDeskTop bg-white  h-screen fixed top-0 left-0 z-10 flex flex-col gap-8 sm3:w-wPanelMobile `}>
-        <Link to="/" clLinkssName="mt-10">Home</Link>
+              <div className={`${openBurger} panel transition	 transform -translate-x-full font-bold text-lg p-10  w-wPanelDeskTop bg-white  h-screen fixed top-0 left-0 z-10 flex flex-col gap-8 sm3:w-wPanelMobile `}>
+      <Link to="/" clLinkssName="mt-10">Home</Link>
       <Link to="/portfolio">Portfolio</Link>
       <Link to="/services">Services</Link>
       <Link to="/contact">Contact</Link>
@@ -63,7 +42,7 @@ const [openBurger, setopenBurger] = useState("")
   <div className="flex items-center gap-7 visible md2:hidden">
     <div className="burger cursor-pointer"><MenuIcon style={{fontSize: '36px'}}/></div>
     <nav className="flex gap-5 font-bold text-lg">
-    <Link to="/">Home</Link>
+      <Link to="/">Home</Link>
       <Link to="/portfolio">Portfolio</Link>
       <Link to="/services">Services</Link>
       <Link to="/contact">Contact</Link>
@@ -75,29 +54,16 @@ const [openBurger, setopenBurger] = useState("")
 
 
 
-<div className="portfoliotext">
-  <h1 className="font-bold text-lg mb-2">Job postings</h1>
-  <p className="max-w-paragraph opacity-70 font-light">Workcation is a property rental website. Entiam ullamcorper massa viverra consequat, consecteture id nulla tempus. Fringilla egestas justo massa purus sagittis malesuada.</p>
-  <hr className="my-5" />
+
+
+
+
+
+
+<div className="box py-96">
+
 </div>
 
-
-  <Gallery photos={photos} onClick={openLightbox} style={{display: 'none'}} />
-
-  <ModalGateway>
-        {viewerIsOpen ? (
-          <Modal onClose={closeLightbox}>
-            <Carousel
-              currentIndex={currentImage}
-              views={photos.map(x => ({
-                ...x,
-                srcset: x.srcSet,
-                caption: x.title
-              }))}
-            />
-          </Modal>
-        ) : null}
-      </ModalGateway>
 
 
 
@@ -185,9 +151,8 @@ const [openBurger, setopenBurger] = useState("")
 </footer>
 
 </div>
-            
         </>
     )
 }
 
-export default Portfolio
+export default Contact

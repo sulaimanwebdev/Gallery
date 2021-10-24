@@ -25,6 +25,7 @@ module.exports = {
 
         'md2': {'max': '720px'},
 
+
         // => @media (max-width: 767px) { ... }
   
         'sm': {'max': '639px'},
@@ -33,6 +34,9 @@ module.exports = {
 
         'sm3': {'max': '473px'},
 
+
+        'smmmm': {'min': '700px'},
+        'asd': {'min': '700px'},
 
 
         

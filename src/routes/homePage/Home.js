@@ -33,8 +33,8 @@ const [openBurger, setopenBurger] = useState("")
         <div className={`${openBurger} panel transition	 transform -translate-x-full font-bold text-lg p-10  w-wPanelDeskTop bg-white  h-screen fixed top-0 left-0 z-10 flex flex-col gap-8 sm3:w-wPanelMobile `}>
       <Link to="/" clLinkssName="mt-10">Home</Link>
       <Link to="/portfolio">Portfolio</Link>
-      <Link to="/">Services</Link>
-      <Link to="/">Contact</Link>
+      <Link to="/services">Services</Link>
+      <Link to="/contact">Contact</Link>
       <CloseIcon className="absolute top-11 cursor-pointer right-10" style={{fontSize: '36px'}} onClick={close}/>
         </div>
 
@@ -56,8 +56,8 @@ const [openBurger, setopenBurger] = useState("")
     <nav className="flex gap-5 font-bold text-lg">
       <Link to="/">Home</Link>
       <Link to="/portfolio">Portfolio</Link>
-      <Link to="/">Services</Link>
-      <Link to="/">Contact</Link>
+      <Link to="/services">Services</Link>
+      <Link to="/contact">Contact</Link>
     </nav>
      </div>
      <div className="logo"><img src="/images/logo_big.svg" alt=""  className="cursor-pointer w-24"/></div>
